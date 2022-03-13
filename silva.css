@@ -1,0 +1,313 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family:sans-serif, 'Courier New', Courier, monospace;
+    height: 2500px;
+}
+
+.container{
+    width: 1100px;
+    margin:auto;
+}
+.clearfix{
+    clear: both;
+}
+section.header{
+    height: 600px;
+background-image: url(https://elzerowebschool.github.io/HTML_And_CSS_Template_One/images/about.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+}
+section.header img{
+    padding-top: 15px;
+    float: left;
+}
+section.header nav{
+    float: right;
+}
+section.header nav ul li{
+    display: inline-block;
+    padding-left: 15px ;
+}
+section.header nav ul li a{
+    text-decoration: none;
+    font-size:25px;
+    color: red;
+
+}
+section.header .header-content{
+    width: 500px;
+    padding: 10px;
+    margin: auto ;
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+section.header .header-content h2{
+   font-size: 25px;
+   color: blue;
+}
+section.header .header-content p{
+    line-height: 1.5;
+    font-size: 21px;
+
+}
+section.header .header-content button{
+    outline: none ;
+    width:180px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #70cbc7;
+    font-size: 25px;
+    color: white;
+    border-radius: 10px;
+}
+section.header .header-footer{
+    width: 40px;
+    height: 53px;
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+border-radius: 18px ;
+border: 2px solid white;
+}
+section.header .header-footer .scroll{
+    width: 5px;
+    height: 10px ;
+    margin: auto;
+    position:relative;
+    background-color:white ;
+    top: 4px;
+    animation: scrolling 2s ease-in-out infinite;
+
+}
+@keyframes scrolling {
+    0%{
+        opacity: 0;
+        top:0
+    }
+    10%{
+        opacity: 1;
+        top:10px
+    }
+    25%{
+        opacity: 1;
+        top:20px 
+    }
+}
+section.befirst {
+    height: 500px;
+    /* background-image: url(https://elzerowebschool.github.io/HTML_And_CSS_Template_One/images/services.jpg); */
+    padding-top: 10px;
+    text-align: center;
+
+}
+section.befirst h2 {
+    margin-bottom: 20px;
+}
+section.befirst p {
+ margin-bottom: 20px;
+ font-size:25px;
+ color: blue;
+}
+
+
+section.befirst .befirst-img{
+    text-align: center;
+    
+}
+section.befirst .befirst-img img{
+ width: 600px ;
+}
+section.features{
+    margin-top: 20px;
+}
+section.features .feature-feet{
+    width: 31.3%;
+    float: left;
+    margin-right: 2%;
+}
+section.features .feature-feet hr{
+    height: 5px;
+background-color: blue;
+margin-bottom: 16px;
+/* margin-top: 10px ; */
+}
+section.features .feature-feet p{
+    color: #929496;
+    line-height: 1.2;
+    margin-top: 10px;
+}
+section.features .feature-feet:nth-child(2) hr{
+    background-color: brown;
+}
+section.pricing{
+    padding-top: 15%;
+    padding-bottom: 15%;
+    text-align: center; 
+    color: darkblue;
+    background-color: #70cbc7;
+}
+section.pricing h2{
+    margin-bottom: 20px;
+    color: white;
+    font-size:30px ;
+}
+section.pricing p{
+    letter-spacing: 2px ;
+
+}
+section.pricing .pricing-flex{
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    margin-top: 20px ;
+
+}
+section.pricing .pricing-flex .flex-item{
+    width: 30%;
+    color: white;
+
+}
+section.pricing .pricing-flex .flex-item:nth-of-type(1),
+section.pricing .pricing-flex .flex-item:nth-of-type(3){
+    margin-top: 2%;
+}
+
+section.pricing .pricing-flex .flex-item ul{
+    background-color: white;
+    list-style:none;
+    transition: all 0.1s ease-in-out;
+}
+section.pricing .pricing-flex .flex-item ul:hover{
+    margin-top: -10px;
+}
+section.pricing .pricing-flex .flex-item ul:hover .doller{
+    background-color: brown;
+}
+
+section.pricing .pricing-flex .flex-item ul .price{
+    background-color: #000;
+    color: white;
+    padding: 15px;
+    margin-top: 20px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+section.pricing .pricing-flex .flex-item ul .doller{
+    font-size:25px;
+   font-weight:bold;
+   background-color:#000;
+   color: white;
+}
+section.pricing .pricing-flex .flex-item ul .doller small{
+    font-size:15px;
+    color: thistle;
+} 
+
+section.pricing .pricing-flex .flex-item ul .content{
+    color: #929496;
+    padding: 10px;
+}
+section.pricing .pricing-flex .flex-item ul li.silva{
+    color: black;
+    font-weight:bold;
+    margin-bottom: 10px ;
+    margin-top: 5px;
+    border-bottom: 1px solid #ccc;
+    text-transform: uppercase;
+}
+section.pricing .pricing-flex .flex-item ul li.btn{
+    color: blueviolet; 
+    margin-top: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+section.invite{
+    height: auto;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+section.invite h2{
+    margin-bottom: 15px;
+    text-transform: uppercase;
+
+}
+section.invite p{
+color: blue;
+margin-bottom: 10px ;
+
+}
+section.invite input{
+    margin-bottom: 20px;
+    padding: 10px;
+width:300px;
+height: 40px;
+border: none;
+}
+section.invite ::-webkit-input-placeholder{
+    color: red;
+}
+
+section.invite button{
+    background-color: #70cbc7;
+    cursor: pointer;
+    border-radius: 20px ;
+    padding: 20px;
+    text-transform: uppercase;
+}
+section.info{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    width: 60%;
+    margin: auto ;
+    border-bottom: 1px solid #000;
+}
+section.info .info-img{
+    width: 20%;
+    float: left;
+}
+section.info .info-info{
+    width:80%;
+    float: left;
+
+} 
+section.info .info-info p{
+    font-weight:bold;
+}
+.footer{
+    padding-bottom: 20px ;
+}
+.footer p{
+    color: black ;
+    text-align: center;
+    margin-top: 10px ;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
